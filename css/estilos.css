@@ -1,0 +1,220 @@
+/*
+    estilos.css
+    Descripción: Estilos personalizados para el Gestor de Tareas.
+    Se organiza en secciones (generales, título, tarjetas, formulario,
+    botones, contadores, tabla, badges, tareas completadas, acciones,
+    fechas vencidas y responsive).
+*/
+
+/* ==========================
+   ESTILOS GENERALES
+   ========================== */
+
+body{
+    background:#f4f7fb;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width:1200px;
+}
+
+/* ==========================
+   TITULO
+========================== */
+
+h1{
+    font-weight:bold;
+}
+
+/* ==========================
+   TARJETAS
+========================== */
+
+.card{
+    border:none;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.card-header{
+    font-weight:bold;
+}
+
+.shadow{
+    box-shadow:0 8px 20px rgba(0,0,0,.15)!important;
+}
+
+/* ==========================
+   FORMULARIO
+========================== */
+
+.form-control,
+.form-select{
+
+    border-radius:10px;
+    padding:10px;
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    border-color:#0d6efd;
+    box-shadow:0 0 8px rgba(13,110,253,.3);
+
+}
+
+/* ==========================
+   BOTONES
+========================== */
+
+.btn{
+
+    border-radius:10px;
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* ==========================
+   CONTADORES
+========================== */
+
+.contador{
+
+    background:white;
+    transition:.3s;
+    margin-bottom:15px;
+
+}
+
+.contador:hover{
+
+    transform:scale(1.04);
+
+}
+
+.contador h3{
+
+    color:#0d6efd;
+    font-size:35px;
+    margin-bottom:5px;
+
+}
+
+.contador p{
+
+    color:#777;
+    margin:0;
+
+}
+
+/* ==========================
+   TABLA
+========================== */
+
+table{
+
+    margin:0;
+
+}
+
+thead{
+
+    text-align:center;
+
+}
+
+tbody td{
+
+    vertical-align:middle;
+    text-align:center;
+
+}
+
+tbody tr{
+
+    transition:.2s;
+
+}
+
+tbody tr:hover{
+
+    background:#f8f9fa;
+
+}
+
+/* ==========================
+   BADGES
+========================== */
+
+.badge{
+
+    font-size:14px;
+    padding:8px 12px;
+
+}
+
+/* ==========================
+   TAREA COMPLETADA
+========================== */
+
+.completada{
+
+    text-decoration:line-through;
+    color:gray;
+    opacity:.7;
+
+}
+
+/* ==========================
+   BOTONES DE ACCIONES
+========================== */
+
+.acciones button{
+
+    margin:2px;
+
+}
+
+/* ==========================
+   FECHAS VENCIDAS
+========================== */
+
+.vencida{
+
+    background:#ffe5e5!important;
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+    h1{
+
+        font-size:28px;
+
+    }
+
+    .contador{
+
+        margin-bottom:20px;
+
+    }
+
+    table{
+
+        font-size:14px;
+
+    }
+
+}
